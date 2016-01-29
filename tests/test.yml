@@ -1,5 +1,10 @@
 ---
 - hosts: localhost
   remote_user: root
+  
   roles:
-    - ansible-papertrail
+    - role: ansible-papertrail
+      papertrail:
+        logs:
+          - { path: /var/log/auth.log, comment: 'Auth logs'  }
+          - { path: /var/log/nginx/*.log, comment: 'All nginx logs'  }
