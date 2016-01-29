@@ -1,3 +1,5 @@
+ansible_managed: This file is managed by Ansible, all changes will be lost.
+
 papertrail:
   config_path: /etc/log_files.yml
   version: 0.16

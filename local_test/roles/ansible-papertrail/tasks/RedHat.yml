@@ -1,9 +1,0 @@
-- name: Not supperted
-  debug: msg="Sorry, It hasn't supported yet"
-
-# - name: Configure Papertrail service definition
-#   template:
-#     src: remote_syslog.systemd.service
-#     dest: /etc/systemd/system/remote_syslog.sevice
-#   notify:
-#     - Restart remote_syslog

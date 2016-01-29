@@ -1,9 +1,0 @@
-# {{ ansible_managed }}
-files:
-  - /var/log/*.log
-destination:
-  host: {{ papertrail.host }}
-  port: {{ papertrail.port }}
-  protocol: tls
-hostname: {{ papertrail.hostname }}  # override OS hostname
-new_file_check_interval: "10" # Check every 10 seconds
