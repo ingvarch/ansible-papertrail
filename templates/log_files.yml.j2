@@ -1,6 +1,8 @@
 # {{ ansible_managed }}
 files:
-  - /var/log/*.log
+{% for log in papertrail.logs %}
+  - {{ log.path }}
+{% endfor %}
 destination:
   host: {{ papertrail.host }}
   port: {{ papertrail.port }}

@@ -1,0 +1,13 @@
+---
+- name: Playbook - Papertrail installation
+  hosts: "papertrail"
+  sudo: true
+
+  vars:
+    papertrail:
+      logs:
+        - { path: /var/log/auth.log, comment: 'Auth logs'  }
+        - { path: /var/log/nginx/*.log, comment: 'All nginx logs'  }
+
+  roles:
+    - ansible-papertrail
