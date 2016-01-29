@@ -1,0 +1,9 @@
+papertrail:
+  config_path: /etc/log_files.yml
+  version: 0.16
+  host: logsX.papertrailapp.com
+  port: 12345
+  hostname: papertrail
+
+remote_syslog:
+  dir: /opt

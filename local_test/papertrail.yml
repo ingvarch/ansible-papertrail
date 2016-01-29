@@ -1,0 +1,7 @@
+---
+- name: Papertrail vagrat localtest
+  hosts: vagrant
+  sudo: true
+
+  roles:
+    -  { role: ansible-papertrail }
